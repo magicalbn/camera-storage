@@ -4,7 +4,15 @@ const Footer = ({ flipCamera }) => {
     return (
         <div className="bg-black mt-14 px-5 ">
             <div className="flex items-center">
-                <div className="flex-1"></div>
+                <div className="flex-1 flex justify-start">
+                    <div className="border border-black overflow-hidden">
+                        <img
+                            className="h-[3.25rem] w-[3.25rem] blur-sm"
+                            alt="preview"
+                            src="https://picsum.photos/100/100"
+                        />
+                    </div>
+                </div>
                 <div className="flex-1 flex justify-center">
                     <img
                         className="h-20"
