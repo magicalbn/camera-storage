@@ -1,41 +1,25 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState } from "react";
+import Webcam from "react-webcam";
 
 const Camera = () => {
-    const videoRef = useRef(null);
+    const [camerType, setCameraType] = useState("user");
 
-    useEffect(() => {
-        const initCamera = async () => {
-            try {
-                const stream = await navigator.mediaDevices.getUserMedia({
-                    video: true,
-                });
-
-                if (videoRef.current) {
-                    videoRef.current.srcObject = stream;
-                }
-            } catch (error) {
-                console.error("Error accessing camera:", error);
-            }
-        };
-
-        initCamera();
-
-        return () => {
-            // Cleanup: Stop the camera stream when the component is unmounted
-            if (videoRef.current) {
-                const stream = videoRef.current.srcObject;
-                if (stream) {
-                    const tracks = stream.getTracks();
-                    tracks.forEach((track) => track.stop());
-                }
-            }
-        };
-    }, []);
-
+    const flipCamera = () => {
+        if (camerType == "user") {
+            setCameraType("selfie");
+        } else setCameraType("user");
+        console.log(camerType);
+    };
     return (
         <div>
-            <h2>Camera Component</h2>
-            <video ref={videoRef} autoPlay playsInline />
+            <Webcam
+                videoConstraints={{
+                    facingMode: camerType,
+                }}
+            />
+            <button className="text-white" onClick={flipCamera}>
+                flip
+            </button>
         </div>
     );
 };
