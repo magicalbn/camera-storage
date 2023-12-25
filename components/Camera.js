@@ -13,7 +13,7 @@ const Camera = () => {
     };
     return (
         <div>
-            <div className="bg-[#131313] h-[65vh]  overflow-hidden">
+            <div className="bg-[#131313] h-[66vh]  overflow-hidden">
                 <Webcam
                     className="blur-md "
                     videoConstraints={{

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Modes from "./Modes";
 
 const Footer = ({ flipCamera }) => {
+    const [mode, setMode] = useState("PHOTO");
     return (
-        <div className="bg-black mt-14 px-5 ">
-            <div className="flex items-center">
+        <div className="bg-black  px-5 ">
+            <Modes mode={mode} setMode={setMode} />
+            <div className="flex items-center mt-3">
                 <div className="flex-1 flex justify-start">
                     <div className="border border-black overflow-hidden">
                         <img
@@ -17,7 +20,11 @@ const Footer = ({ flipCamera }) => {
                     <img
                         className="h-20"
                         alt="flip"
-                        src="./assets/circle.png"
+                        src={
+                            ["PHOTO", "PORTRAIT", "PANO"].includes(mode)
+                                ? "./assets/circle.png"
+                                : "./assets/circle-red.png"
+                        }
                     />
                 </div>
                 <div className="flex-1 flex justify-end">

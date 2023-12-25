@@ -2,11 +2,11 @@ import React from "react";
 
 const StorgaeMessage = () => {
     return (
-        <div className="absolute bg-[#212121] text-white top-[50%] left-[50%]  rounded-[1rem] max-w-[600px] w-[75vw] translate-y-[-50%] translate-x-[-50%]">
+        <div className="absolute bg-[#1e1e1e] text-white top-[47%] left-[50%]  rounded-[1rem] max-w-[600px] w-[75vw] translate-y-[-50%] translate-x-[-50%]">
             <p className="text-[#fefefe] text-center font-bold text-lg p-5 pb-0">
                 iPhone Storage Full
             </p>
-            <p className="text-[#fefefe] text-center p-5 pt-0 text-sm">
+            <p className="text-[#fefefe] text-center p-5 pt-0 text-sm line leading-4">
                 You do not have enough storage to take a photo. Free up space by
                 deleting unneeded apps, videos, or music.
             </p>
