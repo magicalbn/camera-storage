@@ -36,7 +36,7 @@ const Camera = () => {
                 </div>
 
                 <Webcam
-                    className="blur-sm"
+                    className="blur-sm h-[66vh] object-cover w-screen"
                     videoConstraints={{
                         facingMode: { exact: camerType },
                     }}
