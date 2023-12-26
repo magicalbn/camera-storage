@@ -16,7 +16,7 @@ const Modes = ({ mode, setMode }) => {
                     activeElement.offsetLeft -
                     containerWidth / 2 +
                     activeElement.clientWidth / 2 -
-                    17;
+                    16;
                 containerRef.current.scrollTo({
                     left: scrollLeft,
                     behavior: "smooth",
@@ -36,7 +36,7 @@ const Modes = ({ mode, setMode }) => {
     return (
         <div className="bg-black mt-4">
             <div
-                className="flex gap-10 overflow-x-auto scrollbar-hide px-[11rem]"
+                className="flex gap-10 overflow-x-auto scrollbar-hide pl-[8.3rem] pr-[10rem]"
                 ref={containerRef}
             >
                 {modesList.map((each) => {
