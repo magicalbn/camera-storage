@@ -9,7 +9,14 @@ module.exports = {
         "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                SFCameraRegular: ["SFCamera-Regular", "sans-serif"],
+                SFCameraMedium: ["SFCamera-Medium", "sans-serif"],
+                SFCameraSemiBold: ["SFCamera-SemiBold", "sans-serif"],
+                SFCameraBold: ["SFCamera-Bold", "sans-serif"],
+            },
+        },
     },
     plugins: [],
 };

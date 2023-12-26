@@ -43,7 +43,7 @@ const Modes = ({ mode, setMode }) => {
                     return (
                         <p
                             data-mode={each}
-                            className={` whitespace-nowrap text-[12px] font-[800] ${
+                            className={` whitespace-nowrap text-[12.2px] font-[800] font-SFCameraRegular ${
                                 mode == each ? "text-[#ffcc00]" : "text-white"
                             }`}
                             key={each}

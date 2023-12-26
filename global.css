@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'SFCamera-Regular';
+    src: url('./public/assets/fonts/SFCamera-Regular.otf') format('opentype');
+    /* Add other font properties if needed */
+}
+
+@font-face {
+    font-family: 'SFCamera-Medium';
+    src: url('./public/assets/fonts/SFCamera-Medium.otf') format('opentype');
+    /* Add other font properties if needed */
+}
+
+@font-face {
+    font-family: 'SFCamera-SemiBold';
+    src: url('./public/assets/fonts/SFCamera-Semibold.otf') format('opentype');
+    /* Add other font properties if needed */
+}
+
+@font-face {
+    font-family: 'SFCamera-Bold';
+    src: url('./public/assets/fonts/SFCamera-Bold.otf') format('opentype');
+    /* Add other font properties if needed */
+}
+
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
