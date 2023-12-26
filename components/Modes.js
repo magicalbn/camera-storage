@@ -34,7 +34,7 @@ const Modes = ({ mode, setMode }) => {
         "PANO",
     ];
     return (
-        <div className="bg-black mt-4">
+        <div className="bg-black mt-5">
             <div
                 className="flex gap-10 overflow-x-auto scrollbar-hide pl-[8.3rem] pr-[10rem]"
                 ref={containerRef}
@@ -43,8 +43,10 @@ const Modes = ({ mode, setMode }) => {
                     return (
                         <p
                             data-mode={each}
-                            className={` whitespace-nowrap text-[12.2px] font-[800] font-SFCameraRegular ${
-                                mode == each ? "text-[#ffcc00]" : "text-white"
+                            className={` whitespace-nowrap text-[13px] font-[800] ${
+                                mode == each
+                                    ? "text-[#ffcc00] font-SFCameraSemiBold"
+                                    : "text-white font-SFCameraRegular"
                             }`}
                             key={each}
                             onClick={() => setMode(each)}

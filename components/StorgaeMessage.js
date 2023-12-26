@@ -12,7 +12,10 @@ const StorgaeMessage = () => {
             </p>
 
             <div className="flex border-t border-[#373737]">
-                <div className="flex-1 h-12 flex justify-center items-center border-r border-[#373737]">
+                <div
+                    onClick={() => window.close()}
+                    className="flex-1 h-12 flex justify-center items-center border-r border-[#373737]"
+                >
                     <p className=" text-center text-[#6596d4]">Not now</p>
                 </div>
                 <div className="flex-1 h-12 flex justify-center items-center">
