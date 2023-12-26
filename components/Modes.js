@@ -16,7 +16,7 @@ const Modes = ({ mode, setMode }) => {
                     activeElement.offsetLeft -
                     containerWidth / 2 +
                     activeElement.clientWidth / 2 -
-                    16;
+                    19;
                 containerRef.current.scrollTo({
                     left: scrollLeft,
                     behavior: "smooth",
